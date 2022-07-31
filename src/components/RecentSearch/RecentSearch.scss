@@ -1,0 +1,32 @@
+.searchesWrapper {
+  margin-top: 50px;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 50px;
+  position: relative;
+  .posCenter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 0.67em 0;
+  }
+  a {
+    min-width: 300px;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 0 0.1em 0.1em 0;
+    color: #00a9ea;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid #00a9ea;
+    }
+  }
+}
