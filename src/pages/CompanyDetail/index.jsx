@@ -39,7 +39,7 @@ const CompanyDetail = () => {
     <>
     <div className="detailWrapper">
       <div className="heading">
-        <span className="tableSpan" style={{cursor:"pointer"}} onClick={()=>history.push("/")} >Djektro.com</span>
+        <span className="tableSpan" style={{cursor:"pointer"}} onClick={()=>history.push("/")} >Drektory.com</span>
       </div>
 
       {isLoading ?
@@ -48,7 +48,7 @@ const CompanyDetail = () => {
         <div className="container">
           <div className="titleSection">
              <h1>{`${organizationData?.CompanyName} Phone Number`}</h1>
-              <p>{`${organizationData?.CompanyName} ${organizationData?.DepartmentYourCalling} with Djecktro`}</p>
+              <p>{`${organizationData?.CompanyName} ${organizationData?.DepartmentYourCalling} with Drektory`}</p>
             </div>
       <div className="detailSectionWrapper">
         <div className="custom-card">
