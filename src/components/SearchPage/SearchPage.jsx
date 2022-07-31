@@ -7,7 +7,7 @@ import DebounceSelect from "../DebounceSelect/DebounceSelect";
 async function fetchOrganizationList(username) {
   console.log('fetching user', username);
   return axios
-  .get(`http://localhost:8000/api/organizations/?name=${username}`)
+  .get(`${process.env.REACT_APP_BACKEND_URL}/organizations/?name=${username}`)
   .then(function ({data}) {
      const structure =data.data.organizations.map((organization)=>({
       label: `${organization.CompanyName}`,

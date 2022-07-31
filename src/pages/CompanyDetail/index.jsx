@@ -32,7 +32,7 @@ const CompanyDetail = () => {
     console.log("Entered in useEffect")
     if(organizationData){
       console.log("Entered")
-    axios.post("http://localhost:8000/api/recentSearch/",{organization_name : organizationData?.CompanyName , organization_id : organizationData?._id});
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/recentSearch/`,{organization_name : organizationData?.CompanyName , organization_id : organizationData?._id});
     }
   },[organizationData])
   return (
