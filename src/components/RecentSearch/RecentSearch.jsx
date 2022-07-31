@@ -11,7 +11,7 @@ const RecentSearch = () => {
   const history = useHistory();
   useEffect(()=>{
     axios
-    .get(`http://localhost:8000/api/recentSearch/`)
+    .get(`${process.env.REACT_APP_BACKEND_URL}/recentSearch/`)
      .then((resp)=>{
        console.log(resp);
        setRecentSearch(resp.data?.searches)

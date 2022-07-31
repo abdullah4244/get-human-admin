@@ -26,7 +26,7 @@ function phonenumber(inputtxt)
     const hanldeSubmit = () => {
       if(name && description && phoneNumber && email && phonenumber(phoneNumber)) {
 
-        axios.post("http://localhost:8000/api/organizations/query" , {description,email,name,phoneNumber}).then((resp)=>{
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/organizations/query` , {description,email,name,phoneNumber}).then((resp)=>{
           console.log(resp ,"Successfull")
         }).catch((err)=>{
            console.log(err)

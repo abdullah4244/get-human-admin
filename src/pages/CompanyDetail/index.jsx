@@ -17,7 +17,7 @@ const CompanyDetail = () => {
  const history = useHistory()
   useEffect(()=>{
     axios
-    .get(`http://localhost:8000/api/organizations/${id}`)
+    .get(`${process.env.REACT_APP_BACKEND_URL}/organizations/${id}`)
      .then((resp)=>{
        console.log(resp , "resp here");
        setOrganizationData(resp.data?.data?.organization)
